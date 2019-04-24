@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /*这里用来vh*/
+}
+
+li {
+	list-style-type: none;
+	cursor:pointer;
+}
+
+.g-login {
+    background: #666;
+    padding: 0;
+	width: 600px;
+	height: 280px;
+	margin: 50px auto;
+}
+
+.m-login-wrap {
+	display: flex;
+	background: #eee;
+    height: 100%;
+    margin-top: 100px;
+}
+
+.m-login-logo {
+	flex: 3;
+	background: url('../../images/logo-profile.jpg');
+	background-size: 100% 108%;
+
+
+}
+
+.m-login-form {
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+.m-login-title {
+	background: #ccc;
+	text-align: center;
+}
+
+.m-login-title h1 {
+	font-size: 1.5rem;
+}
+
+.m-login-main {
+	padding: 10px;
+}
+
+.m-login-main input {
+	padding: 10px 15px;
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 16px;
+	margin: 5px 0;
+}
+
+.m-login-main a {
+	padding: 10px 15px;
+	font-size: 16px;
+	margin: 5px 0;
+	text-decoration: none;
+	text-align: center;
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+	background:#DC143C;
+	color: #fff;
+}
+
+.m-login-fotter {
+	padding: 10px;
+}
+
+.m-login-fotter li{
+	float: right;
+	margin: 5px 10px;
+	font-size: 14px;
+	color: #666;
+}
+
+.m-login-message {
+	position: fixed;
+	top: 50px;
+	width: 600px;
+	padding: 5px 15px;
+	color: #fff;
+	background: #87CEEB;
+	box-sizing: border-box;
+	display: none;
+	transition: 1s;
+}
+
+.hint{
+	margin-top: 30px;
+
+}
+.hint-message{
+	width: 600px;
+	padding: 5px 15px;
+	color: #fff;
+	background: #666;
+	box-sizing: border-box;
+	transition: 1s;
+}
+
+
+
+
+
+
+

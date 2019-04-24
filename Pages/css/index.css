@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2019-03-14 12:44:42
+ * @version $Id$
+ */
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+header {
+    background: #eee;
+    position: relative;
+}
+
+header:after {
+  content: ' ';
+  display: block;
+  clear: both;
+}
+
+.g-index {
+  height: 100%;
+}
+
+
+.m-index-logo {
+  width: 120px;
+  height: 45px;
+  background: url('../../images/logo.png');
+  background-size:  50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  float: left;
+}
+.m-index-menu {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.m-index-menu li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+section {
+  display: flex;
+  height: 100%;
+  margin: 5px;
+
+}
+
+.m-index-list {
+  width: 120px;
+  background: #eee;
+  padding: 10px 15px;
+}
+
+.m-index-list li {
+  margin: 10px;
+  font-size: 12px;
+}
+
+.m-index-main {
+  flex: 1;
+}
+
+.m-index-img {
+  border:2px grey solid;
+  height: 400px;
+}
+
+.m-index-txt {
+  padding: 10px;
+  font-size: 12px;
+  color: #666;
+}
+
+
+

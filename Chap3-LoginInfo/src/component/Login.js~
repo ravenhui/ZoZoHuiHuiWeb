@@ -1,0 +1,43 @@
+import React, { Component } from 'react';
+import './Login.css';
+import axios from 'axios'
+import Msg from './Msg'
+
+class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { user: null, isLogin:-1 }
+  }
+
+  doLogin = (e) => {
+    e.preventDefault()
+    let usr = e.currentTarget['usr'].value
+    let pwd = e.currentTarget['pwd'].value
+    let data = { params: { usr: usr, pwd:pwd  }}
+    axios.get('http://localhost:3000/login',data).then(function (r) {
+      Msg(r.data.message)
+    })
+  } 
+
+  render() {  
+    return (
+
+      <div className="g-login">
+        <form onSubmit={this.doLogin}>
+          <div className="row">
+            <input type="text" id='usr'/>
+          </div>
+          <div className="row">
+            <input type="password" id='pwd' />
+          </div>
+          <div className="row">
+            <button type="submit">登录</button>
+          </div>
+        </form>
+        
+      </div>
+    );
+  }
+}
+
+export default Login

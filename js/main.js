@@ -37,6 +37,7 @@
       });
     });
 
+  
     
     //scroll js
     smoothScroll.init({
@@ -90,7 +91,7 @@
 
     //typed js
     $(".typed").typed({
-        strings: ["我是张小灰", "我是方小慧", "欢迎来到我们的世界"],
+        strings: ["我是小灰", "我是小慧", "welcome！"],
         typeSpeed: 100,
         backDelay: 900,
         // loop
@@ -137,14 +138,15 @@
         $(this).removeClass('used');
     });
 
-    //pop up porfolio
-    $('.portfolio-image li a').magnificPopup({
-      type: 'image',
-      gallery: {
-        enabled: true
-      }
-      // other options
-    });
+    //pop up porfolio 用于展示图片，是一个gallery
+    // $('.portfolio-image li a').magnificPopup({
+    //   type: 'image',
+    //   gallery: {
+    //     enabled: true
+    //   }
+    //   // other options
+    // });
+
     
     //Skill
     jQuery('.skillbar').each(function() {
